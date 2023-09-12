@@ -1,0 +1,88 @@
+.courseCard {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-bottom: 2rem;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  /* background: #112a46; */
+  background-color: #6b6ecc;
+  background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+  box-shadow: 0 10px 15px -3px rgba(33, 150, 243, 0.4),
+    0 4px 6px -4px rgba(33, 150, 243, 0.4);
+  /* rgba(17, 24, 39, 1); */
+  padding: 1.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.price {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+
+.desc {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.625;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.lists {
+  margin-bottom: 1.5rem;
+  flex: 1 1 0%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.lists .list {
+  margin-bottom: 0.5rem;
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.lists .list svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+  color: rgb(33 150 243);
+  /* rgba(167, 139, 250, 1); */
+}
+
+.action {
+  border: none;
+  outline: none;
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: rgb(33 150 243);
+  /* rgba(167, 139, 250, 1); */
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: rgb(255 255 255);
+  margin-top: 1.5em;
+}
+.registerBtn {
+  color: rgb(255 255 255);
+  text-decoration: none;
+}

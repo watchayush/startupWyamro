@@ -1,0 +1,13 @@
+.founderMembersContainer {
+  padding: 2em;
+  background: #ecf0f3;
+  margin-top: 0.1em;
+  width: 100%;
+}
+.founderMembersHeading {
+  margin-block: 1em;
+  font-weight: 500 !important;
+  font-size: 2em;
+  color: #0fa3b1;
+  /* #00d4ff; */
+}

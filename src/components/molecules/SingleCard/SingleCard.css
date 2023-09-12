@@ -1,0 +1,89 @@
+.card {
+  /* width: 20rem; */
+  height: 20rem !important;
+  background: white;
+  margin-right: 10px;
+  min-width: 18rem !important;
+}
+.cookieCard {
+  min-width: 18rem !important;
+  max-width: 19rem !important;
+  height: 20rem !important;
+  border-radius: 5%;
+  margin-right: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.cookieCard::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, rgb(33 150 243), rgb(208, 195, 255));
+  z-index: 1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.cookieCard .img {
+  width: 100px;
+  height: 100px;
+  background: #e8e8e8;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 20px;
+  z-index: 2;
+  border: 4px solid #fff;
+}
+.cookieCard:hover::before {
+  height: 100%;
+}
+
+.cookieCard:hover {
+  box-shadow: none;
+}
+
+.cookieHeading {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: black;
+  z-index: 2;
+}
+
+.cookieDescription {
+  font-size: 0.9em;
+  color: black;
+  z-index: 2;
+  font-weight: 500;
+}
+
+.cookieDescription a {
+  color: rgb(241, 241, 241);
+}
+
+.acceptButton {
+  padding: 11px 20px;
+  background-color: rgb(1 122 217);
+  transition-duration: 0.2s;
+  border: none;
+  color: rgb(241, 241, 241);
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.acceptButton a {
+  color: #fff;
+}
+
+.acceptButton:hover {
+  background-color: rgb(1 122 217);
+  transition-duration: 0.2s;
+}

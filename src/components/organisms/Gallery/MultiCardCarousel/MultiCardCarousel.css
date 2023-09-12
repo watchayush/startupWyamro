@@ -1,0 +1,49 @@
+.multiCarouselContainer {
+  /* position: relative; */
+  overflow: hidden;
+  height: 21rem;
+  cursor: grab;
+}
+.multiCarousel {
+  /* position: absolute; */
+  display: flex;
+  padding: 0 10px;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+.prevBtn {
+  position: absolute;
+  left: 0;
+  border: none;
+  width: 60px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.nextBtn {
+  position: absolute;
+  right: 0;
+  border: none;
+  width: 60px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.nextBtn p,
+.prevBtn p {
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.436);
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px black;
+}

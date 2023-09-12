@@ -1,0 +1,249 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.caroselStyle {
+  width: 100%;
+  height: 100vh;
+}
+.carCont {
+  width: 100%;
+  height: 100%;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-wrapper > ul {
+  width: 100%;
+  height: 100% !important;
+}
+
+.facilitiesWrap {
+  margin-block: 1em;
+  background: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7em;
+  align-items: center;
+  justify-content: center;
+  max-width: 95%;
+  margin-inline: auto;
+}
+
+.facilitiesWrap .single {
+  margin-block: 0.5em;
+  width: 400px;
+  min-height: 250px;
+  cursor: pointer;
+  /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1),
+    0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.descTypo {
+  font-family: Montserrat, sans-serif !important;
+  color: rgb(51, 54, 140);
+  font-weight: 500;
+}
+
+.facilitiesWrap .single img {
+  max-width: 100%;
+}
+.sliderWrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.coreMembersContainer {
+  padding: 2em;
+  background: #ecf0f3;
+  margin-top: 0.1em;
+  width: 100%;
+}
+.coursesOfferedContainer {
+  margin-top: 1em;
+  padding-block: 3em;
+  padding-inline: 2em;
+  width: 100%;
+  background-image: url("../../../public/images/home/degree2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  /* z-index: 999; */
+}
+/* .coursesOfferedContainer ::before {
+  width: 100%;
+  background-image: url("../../../public/images/home/degree2.jpg");
+  background-repeat: no-repeat, no-repeat;
+  object-fit: cover;
+  z-index: 999;
+} */
+.coreMembersHeading {
+  margin-block: 1em;
+  font-weight: 500 !important;
+  font-size: 2em;
+  color: #0fa3b1;
+  /* #00d4ff; */
+}
+.coursesOfferedHeading {
+  margin-bottom: 0.5em;
+  font-weight: 500 !important;
+  font-size: 2em;
+  color: #fff;
+}
+@media (max-width: 1500px) {
+  .facilitiesWrap {
+    gap: 3em;
+  }
+}
+@media (max-width: 1350px) {
+  .facilitiesWrap {
+    gap: 2em;
+  }
+}
+@media (max-width: 850px) {
+  .facilitiesWrap {
+    gap: 1em;
+  }
+}
+/* @media (max-width: 1238px) {
+  .carousel .slide {
+    height: 60vh;
+  }
+} */
+/* @media (max-width: 1165px) {
+  .carousel .slide {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 1055px) {
+  .carousel .slide {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 960px) {
+  .carousel .slide {
+    height: 45vh;
+  }
+  .caroselStyle {
+    margin-top: 3em;
+  }
+}
+@media (max-width: 848px) {
+  .carousel .slide {
+    height: 40vh;
+  }
+  .caroselStyle {
+    margin-top: 3em;
+  }
+}
+@media (max-width: 750px) {
+  .carousel .slide {
+    height: 35vh;
+  }
+}
+@media (max-width: 648px) {
+  .carousel .slide {
+    height: 30vh;
+  }
+  .caroselStyle {
+    margin-top: 2em;
+  }
+}
+@media (max-width: 565px) {
+  .carousel .slide {
+    height: 25vh;
+  }
+}
+@media (max-width: 448px) {
+  .caroselStyle {
+    margin-top: 2em;
+  }
+  .carousel .slide {
+    height: 20vh;
+  }
+}
+
+@media (max-width: 359px) {
+  .caroselStyle {
+    margin-top: 2em;
+  }
+  .carousel .slide {
+    height: 16vh;
+  }
+}
+@media (max-width: 259px) {
+  .caroselStyle {
+    margin-top: 2em;
+  }
+  .carousel .slide {
+    height: 10vh;
+  }
+} */
+
+h1 {
+  margin: 1rem auto 4rem;
+}
+.membersList {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.descSection {
+  margin: 1em;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.foundationDescLeft {
+  padding: 2em;
+  width: 50%;
+  background: #264653;
+}
+.foundationDescRight {
+  padding: 2em;
+  width: 50%;
+  background: #389ddf;
+  background-image: url("../../../public/images/home/yogaImg4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* #ff9800 */
+  color: white;
+}
+@media (max-width: 870px) {
+  .foundationDescLeft {
+    width: 100%;
+  }
+  .foundationDescRight {
+    display: none;
+  }
+}
+.welcomeHeading {
+  color: white;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+.descPara {
+  color: white;
+  margin-top: 1em;
+}

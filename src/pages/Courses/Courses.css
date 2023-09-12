@@ -1,0 +1,38 @@
+.coursesContainer {
+  margin-top: 5em;
+}
+.coursesList {
+  padding-block: 2em;
+  padding-inline: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6em;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin-inline: auto;
+}
+.certi {
+  height: 50vh !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 4em;
+  padding-left: 3em;
+}
+.certificateText {
+  font-size: 2.5rem !important;
+  line-height: 2rem !important;
+  /* font-weight: 700 !important; */
+  color: #0fa3b1;
+  position: relative;
+}
+.certificateText::after {
+  content: "";
+  position: absolute;
+  height: 0.1em;
+  left: 0.1em;
+  bottom: -0.4em;
+  background: #fff;
+  width: 5%;
+}
