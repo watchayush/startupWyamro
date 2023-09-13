@@ -12,17 +12,17 @@ export default function Courses() {
   let loc = useLocation();
   const imgUrl = process.env.PUBLIC_URL + "/images/home/certificate.jpg";
   useEffect(() => {
-    console.log("location ==> ", loc);
     let arr = loc?.pathname.split("/");
     let course = arr[arr?.length - 1];
     let coursesToShow = allCourses?.filter((c) => {
       if (course === c.courseType) {
         setCourseType(c?.name);
-        return c.courses;
+        return c;
       }
     });
+    console.log("coursesToShow ==> ", coursesToShow);
     setCourseList(coursesToShow[0]?.courses);
-  }, []);
+  }, [loc]);
   const Certificate = styled.div`
     ${(props) => props.imgUrl && `background-image: url(${props.imgUrl})`};
     background-repeat: no-repeat;

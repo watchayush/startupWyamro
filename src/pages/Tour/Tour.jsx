@@ -10,14 +10,20 @@ import EastIcon from "@mui/icons-material/East";
 import { Typography } from "@mui/material";
 
 export default function Tour() {
-  const [allVideosData, setAllVideosData] = useState(prepareData(videosData));
+  const [allVideosData, setAllVideosData] = useState();
   const [scope, animate] = useAnimate();
   const [selectedVideo, setSelectedVideo] = useState();
   const [url, setUrl] = useState();
 
   useEffect(() => {
-    setSelectedVideo(allVideosData[0]);
-  }, []);
+    setAllVideosData(prepareData(videosData));
+  }, [videosData]);
+
+  useEffect(() => {
+    if (allVideosData) {
+      setSelectedVideo(allVideosData[0]);
+    }
+  }, [allVideosData]);
 
   useEffect(() => {
     if (selectedVideo) {

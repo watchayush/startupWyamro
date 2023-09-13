@@ -150,7 +150,7 @@ export const allCourses = [
   {
     name: `University Course`,
     url: "/images/home/university.jpg",
-    courseType: "uriversityCourse",
+    courseType: "universityCourse",
     courses: [
       {
         value: "ba_in_yoga",

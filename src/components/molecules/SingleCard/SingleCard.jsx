@@ -23,7 +23,7 @@ export default function SingleCard({ course }) {
       <ImgCont class="img" url={course?.url}></ImgCont>
       <p className="cookieDescription">{course?.name}</p>
       <button className="acceptButton">
-        <Link to="/admissionForm" className="navLink">
+        <Link to={`/courses/${course?.courseType}`} className="navLink">
           View Courses
         </Link>
       </button>

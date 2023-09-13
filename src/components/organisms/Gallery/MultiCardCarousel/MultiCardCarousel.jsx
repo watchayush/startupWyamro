@@ -1,6 +1,6 @@
-import React, { useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import SingleCard from "../../../molecules/SingleCard/SingleCard";
-import { motion } from "framer-motion";
+import { motion, useAnimate } from "framer-motion";
 import "./MultiCardCarousel.css";
 import Member from "../../../molecules/Member/Member";
 
@@ -8,9 +8,9 @@ export default function MultiCardCarousel({ allCourses, coreMembers }) {
   const [width, setWidth] = useState();
   const carousel = useRef();
 
-  // useEffect(() => {
-  //   setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  // }, []);
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, []);
 
   // const box = useRef();
   //   const box = document.querySelector(".multiCarousel");
