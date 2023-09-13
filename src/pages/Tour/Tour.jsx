@@ -5,19 +5,18 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { prepareData, videosData } from "./constant";
-import { motion, useAnimate } from "framer-motion";
+import { motion } from "framer-motion";
 import EastIcon from "@mui/icons-material/East";
 import { Typography } from "@mui/material";
 
 export default function Tour() {
   const [allVideosData, setAllVideosData] = useState();
-  const [scope, animate] = useAnimate();
   const [selectedVideo, setSelectedVideo] = useState();
   const [url, setUrl] = useState();
 
   useEffect(() => {
     setAllVideosData(prepareData(videosData));
-  }, [videosData]);
+  }, []);
 
   useEffect(() => {
     if (allVideosData) {
@@ -80,7 +79,7 @@ export default function Tour() {
         </motion.div>
       )}
       <div className="tourSectionContainer">
-        <div className="tourSection1" ref={scope}>
+        <div className="tourSection1">
           <div className="contentSection">
             <motion.div
               className="contentContainer"

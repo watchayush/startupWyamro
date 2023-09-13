@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import SingleCard from "../../../molecules/SingleCard/SingleCard";
-import { motion, useAnimate } from "framer-motion";
+import { motion } from "framer-motion";
 import "./MultiCardCarousel.css";
 import Member from "../../../molecules/Member/Member";
 
