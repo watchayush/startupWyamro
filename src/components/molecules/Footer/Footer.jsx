@@ -3,8 +3,12 @@ import RoomIcon from "@mui/icons-material/Room";
 import CallIcon from "@mui/icons-material/Call";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 import "./Footer.css";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer class="footer-section">
@@ -48,13 +52,11 @@ export default function Footer() {
             <div class="col-xl-4 col-lg-4 mb-50">
               <div class="footer-widget">
                 <div class="footer-logo">
-                  <a href="index.html">
-                    <img
-                      src={`/images/Logo2jpg.jpg`}
-                      class="img-fluid"
-                      alt="logo"
-                    />
-                  </a>
+                  <img
+                    src={`/images/Logo2jpg.jpg`}
+                    class="img-fluid"
+                    alt="logo"
+                  />
                 </div>
                 <div class="footer-text">
                   <p>
@@ -66,14 +68,14 @@ export default function Footer() {
                 </div>
                 <div class="footer-social-icon">
                   <span>Follow us</span>
-                  <a href="#">
-                    <i class="fab fa-facebook-f facebook-bg"></i>
+                  <a href="https://www.facebook.com/wyamro?mibextid=ZbWKwL">
+                    <FacebookIcon />{" "}
                   </a>
-                  <a href="#">
-                    <i class="fab fa-twitter twitter-bg"></i>
+                  <a href="https://twitter.com/WyamroF?t=GI6v5dtnkQxwNo0cTKnfgw&s=08">
+                    <TwitterIcon />
                   </a>
-                  <a href="#">
-                    <i class="fab fa-google-plus-g google-bg"></i>
+                  <a href="https://www.instagram.com/wyamro_foundation/">
+                    <InstagramIcon />{" "}
                   </a>
                 </div>
               </div>
@@ -85,35 +87,35 @@ export default function Footer() {
                 </div>
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <a href="#">about</a>
+                    <Link to="aboutUs">about</Link>
                   </li>
                   <li>
-                    <a href="#">services</a>
+                    <Link to="admissionForm">Admission Form</Link>
                   </li>
                   <li>
-                    <a href="#">portfolio</a>
+                    <Link to="/tour">wYamro Tours</Link>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <Link to="contactUs">Contact</Link>
                   </li>
                   <li>
-                    <a href="#">About us</a>
+                    <Link to="aboutUs">About us</Link>
                   </li>
                   <li>
-                    <a href="#">Our Services</a>
+                    <Link to="admissionForm">Admission</Link>
                   </li>
                   <li>
-                    <a href="#">Expert Team</a>
+                    <Link to="contactUs">Expert Team</Link>
                   </li>
                   <li>
-                    <a href="#">Contact us</a>
+                    <Link to="contactUs">Contact us</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">Latest News</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -148,7 +150,7 @@ export default function Footer() {
               <div class="copyright-text">
                 <p>
                   Copyright &copy; 2018, All Right Reserved{" "}
-                  <a href="https://codepen.io/anupkumar92/">Abhedya</a>
+                  <Link to="/">wYamro</Link>{" "}
                 </p>
               </div>
             </div>
@@ -156,19 +158,19 @@ export default function Footer() {
               <div class="footer-menu">
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <a href="#">Terms</a>
+                    <Link to="/aboutUs">About</Link>
                   </li>
                   <li>
-                    <a href="#">Privacy</a>
+                    <Link to="/tour">wYamro Tours</Link>
                   </li>
                   <li>
-                    <a href="#">Policy</a>
+                    <Link to="admissionForm">Admission</Link>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <Link to="contactUs">Contact</Link>
                   </li>
                 </ul>
               </div>

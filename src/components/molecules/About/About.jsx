@@ -16,7 +16,7 @@ export default function About() {
             <button className="cta-button">Learn More</button>
           </div>
           <div className="hero-image">
-            <img src="/images/home/aboutUsImg.jpg" />
+            <img alt="About wYamro" src="/images/home/aboutUsImg.jpg" />
           </div>
         </div>
       </section>

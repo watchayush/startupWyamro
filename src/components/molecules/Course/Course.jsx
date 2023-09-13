@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./Course.css";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
-import CheckCircleOutlineRoundedIcon from "@mui/icons-material/CheckCircleOutlineRounded";
 import { Link } from "react-router-dom";
 
 export default function Course({ course, courseType }) {

@@ -43,7 +43,7 @@ const Gallery = ({ galleryImages }) => {
           <ChevronLeftRoundedIcon className="btnPrev" onClick={prevSlide} />
           <ChevronRightRoundedIcon className="btnNext" onClick={nextSlide} />
           <div className="fullScreenImage">
-            <img src={galleryImages[slideNumber].url} alt="" />
+            <img src={galleryImages[slideNumber].url} alt="gallery Images" />
           </div>
         </div>
       )}
@@ -65,7 +65,10 @@ const Gallery = ({ galleryImages }) => {
                 key={index}
                 onClick={() => handleOpenModal(index)}
               >
-                <img src={process.env.PUBLIC_URL + slide.url} alt="" />
+                <img
+                  src={process.env.PUBLIC_URL + slide.url}
+                  alt="galleryImages"
+                />
               </div>
             );
           })}

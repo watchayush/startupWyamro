@@ -88,13 +88,13 @@ export default function Tour() {
               </Link>
             </motion.div>
             <div className="mediaIcons">
-              <a href="#">
+              <a href="https://www.facebook.com/wyamro?mibextid=ZbWKwL">
                 <FacebookIcon />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/WyamroF?t=GI6v5dtnkQxwNo0cTKnfgw&s=08">
                 <TwitterIcon />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/wyamro_foundation/">
                 <InstagramIcon />
               </a>
             </div>

@@ -40,7 +40,10 @@ export default function Home() {
             return (
               <div className="single" key={index}>
                 <div>
-                  <img src={process.env.PUBLIC_URL + slide.url} alt="" />
+                  <img
+                    src={process.env.PUBLIC_URL + slide.url}
+                    alt="Facilities"
+                  />
                 </div>
                 <div className="desc">
                   <Typography className="descTypo">{slide?.desc}</Typography>

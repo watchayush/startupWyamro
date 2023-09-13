@@ -50,16 +50,20 @@ const Navbar = () => {
     <>
       <nav className={bgColor ? "navBackground" : ""}>
         {/* website logo */}
-        <a href="/" className="brand">
+        <Link to="/" className="brand">
           {/* <Logo /> */}
-          <img src={Logo} style={{ width: "120px", height: "80px" }} />
-        </a>
+          <img
+            alt="Brand Logo"
+            src={Logo}
+            style={{ width: "120px", height: "80px" }}
+          />
+        </Link>
 
         {/* website navigation navbar links */}
         <ul className={`navigationItems ${appendClass}`}>
           {navItems?.map((menu, index) => {
             return (
-              <li href="#">
+              <li>
                 <div
                   className="navLinkContainer"
                   onMouseOver={() => {
