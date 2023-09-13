@@ -15,16 +15,10 @@ export default function Courses() {
     let arr = loc?.pathname.split("/");
     let course = arr[arr?.length - 1];
     let coursesToShow = [];
-    coursesToShow = allCourses?.map((c) => {
-      if (course === c.courseType) {
-        setCourseType(c?.name);
-        setCourseList(c?.courses);
-        return c;
-      }
-      return;
-    });
-    // console.log("coursesToShow ==> ", coursesToShow);
-    // setCourseList(coursesToShow[0]?.courses);
+    coursesToShow = allCourses?.filter((c) => course === c.courseType);
+    console.log("coursesToShow ==> ", coursesToShow);
+    setCourseType(coursesToShow[0]?.name);
+    setCourseList(coursesToShow[0]?.courses);
   }, [loc]);
   const Certificate = styled.div`
     ${(props) => props.imgUrl && `background-image: url(${props.imgUrl})`};
