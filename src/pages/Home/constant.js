@@ -266,7 +266,7 @@ export const coreMembers = {
       profession: "Yogacharya",
     },
     {
-      name: "Raghuvendra Garg",
+      name: "Raghwendra Narayan Garg",
       url: "/images/home/raghuvendra.jpeg",
       designation: "Founder",
       profession: "Yoga Guru",
