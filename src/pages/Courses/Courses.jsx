@@ -14,14 +14,15 @@ export default function Courses() {
   useEffect(() => {
     let arr = loc?.pathname.split("/");
     let course = arr[arr?.length - 1];
-    let coursesToShow = allCourses?.filter((c) => {
+    allCourses?.filter((c) => {
       if (course === c.courseType) {
         setCourseType(c?.name);
-        return c;
+        setCourseList(c?.courses);
+        // return c;
       }
     });
-    console.log("coursesToShow ==> ", coursesToShow);
-    setCourseList(coursesToShow[0]?.courses);
+    // console.log("coursesToShow ==> ", coursesToShow);
+    // setCourseList(coursesToShow[0]?.courses);
   }, [loc]);
   const Certificate = styled.div`
     ${(props) => props.imgUrl && `background-image: url(${props.imgUrl})`};
