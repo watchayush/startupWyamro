@@ -167,40 +167,40 @@ export const allCourses = [
 export const coreMembers = {
   eastern_zone: [
     {
-      name: "Rajnath Singh",
+      name: "Dr. Rajnath Singh",
       url: "/images/home/karan.jpeg",
       zone: "(WYAMRO East Zone)",
       designation: "Director",
     },
     {
-      name: "Abhishek Kumar",
+      name: "Dr. Abhishek Kumar",
       url: "/images/home/abhishek_Kumar.jpeg",
       zone: "(WYAMRO East Zone)",
       designation: "Deputy Director",
     },
     {
-      name: "Abhishek",
+      name: "Dr. Abhishek",
       url: "/images/home/abhishek.jpg",
       designation: "Generel Secretary",
       zone: "(WYAMRO East Zone)",
       profession: "Accupressure specialist",
     },
     {
-      name: "Vikash Kumar Pandit",
+      name: "Dr. Vikash Kumar Pandit",
       url: "/images/home/vikash_Kumar.jpeg",
       designation: "Secretary",
       zone: "(WYAMRO East Zone)",
       profession: "Accupressure specialist",
     },
     {
-      name: "Anu Singh",
+      name: "Dr. Anu Singh",
       url: "/images/home/anu_Singh.jpeg",
       designation: "Executive Member",
       zone: "(WYAMRO East Zone)",
       profession: "Physiotherapist",
     },
     {
-      name: "Shabnam Sharma",
+      name: "Dr. Shabnam Sharma",
       url: "/images/home/shabanam_Sharma.jpeg",
       designation: "Executive Member",
       zone: "(WYAMRO East Zone)",
@@ -266,7 +266,7 @@ export const coreMembers = {
       profession: "Yogacharya",
     },
     {
-      name: "Raghwendra Narayan Garg",
+      name: "Dr. Raghwendra Narayan Garg",
       url: "/images/home/raghuvendra.jpeg",
       designation: "Founder",
       profession: "Yoga Guru",
