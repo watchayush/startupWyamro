@@ -14,7 +14,7 @@ export default function Courses() {
   useEffect(() => {
     let arr = loc?.pathname.split("/");
     let course = arr[arr?.length - 1];
-    allCourses?.filter((c) => {
+    allCourses?.map((c) => {
       if (course === c.courseType) {
         setCourseType(c?.name);
         setCourseList(c?.courses);
