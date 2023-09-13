@@ -14,12 +14,14 @@ export default function Courses() {
   useEffect(() => {
     let arr = loc?.pathname.split("/");
     let course = arr[arr?.length - 1];
-    allCourses?.map((c) => {
+    let coursesToShow = [];
+    coursesToShow = allCourses?.map((c) => {
       if (course === c.courseType) {
         setCourseType(c?.name);
         setCourseList(c?.courses);
-        // return c;
+        return c;
       }
+      return;
     });
     // console.log("coursesToShow ==> ", coursesToShow);
     // setCourseList(coursesToShow[0]?.courses);
