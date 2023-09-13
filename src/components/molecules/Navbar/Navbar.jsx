@@ -4,7 +4,6 @@ import CloseIcon from "@mui/icons-material/Close";
 import "./Navbar.css";
 import { Link, useLocation } from "react-router-dom";
 import { navItems } from "../../../constants/appConstants";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MenuList from "../MenuList/MenuList";
 import Logo from "../../../assets/images/wyamro.svg";

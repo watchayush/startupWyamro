@@ -10,7 +10,6 @@ import {
 } from "./constant";
 import "./Home.css";
 import { Typography } from "@mui/material";
-import SingleCard from "../../components/molecules/SingleCard/SingleCard";
 import MultiCardCarousel from "../../components/organisms/Gallery/MultiCardCarousel/MultiCardCarousel";
 import CarouselImgComp from "../../components/molecules/CarouselImgComp/CarouselImgComp";
 

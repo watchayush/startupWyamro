@@ -1,8 +1,5 @@
 import React from "react";
 import "./ContactUs.css";
-import CallIcon from "@mui/icons-material/Call";
-import RoomIcon from "@mui/icons-material/Room";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import ContactDetails from "../../components/organisms/Gallery/ContactDetails/ContactDetails";
 import OfficeMaps from "../../components/organisms/Gallery/OfficeMaps/OfficeMaps";
 

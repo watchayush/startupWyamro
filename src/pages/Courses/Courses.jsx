@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { allCourses } from "../Home/constant";
 import "./Courses.css";
 import Course from "../../components/molecules/Course/Course";

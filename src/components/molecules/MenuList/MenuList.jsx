@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import "./MenuList.css";
-import { motion, useAnimate } from "framer-motion";
 import styled from "styled-components";
 
 export default function MenuList({
@@ -11,11 +10,9 @@ export default function MenuList({
   subMenuIdClicked = 1,
   noOfItems,
 }) {
-  // const { menuList } = { ...props };
   const [showMenu, setShowMenu] = useState(false);
   const [menuIndexClicked, setMenuIndexClicked] = useState();
   const [subMenuSelected, setSubMenuSelected] = useState();
-  const [scope, animate] = useAnimate();
 
   const className = fromNavbar ? "subMenuCard" : "subMenuCard2";
   const itemHeightPercentage = 100 / noOfItems;
@@ -29,15 +26,7 @@ export default function MenuList({
 
   console.log("menuList ==> ", menuList);
 
-  const variants = {
-    slide: {
-      opacity: [0, 1],
-      x: [-25, 0],
-    },
-  };
-
   return (
-    // variants={variants} animate="slide"
     <SubMenu className={className}>
       {menuList?.map((menu, i) => (
         <div
@@ -89,13 +78,11 @@ export default function MenuList({
                 showMenu &&
                 subMenuSelected === menu?.title &&
                 ++i === menuIndexClicked && (
-                  // <div className="navLinkdwn2Hover">
                   <MenuList
                     menuList={menu?.subMenu}
                     subMenuIdClicked={menu?.id}
                     noOfItems={menuList?.length}
                   />
-                  // </div>
                 )}
             </div>
           )}
