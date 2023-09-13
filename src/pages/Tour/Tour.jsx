@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Tour.css";
-import Typography from "@material-ui/core/Typography/Typography";
 import { Link } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -8,6 +7,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import { prepareData, videosData } from "./constant";
 import { motion, useAnimate } from "framer-motion";
 import EastIcon from "@mui/icons-material/East";
+import { Typography } from "@mui/material";
 
 export default function Tour() {
   const [allVideosData, setAllVideosData] = useState(prepareData(videosData));
