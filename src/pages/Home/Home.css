@@ -7,6 +7,9 @@
   width: 100%;
   height: 100vh;
 }
+.caroselStyle .slider {
+  height: 100vh !important;
+}
 .carCont {
   width: 100%;
   height: 100%;
@@ -200,6 +203,16 @@
   }
 } */
 
+@media (max-width: 870px) {
+  .caroselStyle {
+    height: 50vh;
+    /* margin-top: 2em; */
+  }
+  .caroselStyle .slider {
+    height: 50vh !important;
+  }
+}
+
 h1 {
   margin: 1rem auto 4rem;
 }
@@ -231,8 +244,13 @@ h1 {
   color: white;
 }
 @media (max-width: 870px) {
+  .descSection {
+    margin: 1em 0 1em 0;
+    font-size: 0.9375em;
+  }
   .foundationDescLeft {
     width: 100%;
+    padding: 2em 1em;
   }
   .foundationDescRight {
     display: none;
@@ -242,8 +260,13 @@ h1 {
   color: white;
   font-size: 18px !important;
   font-weight: 500 !important;
+  font-family: Karla, sans-serif !important;
+  letter-spacing: 1px !important;
 }
 .descPara {
   color: white;
   margin-top: 1em;
+
+  font-family: Karla, sans-serif;
+  letter-spacing: 1px;
 }
