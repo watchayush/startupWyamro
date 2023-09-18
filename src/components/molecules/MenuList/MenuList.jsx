@@ -9,6 +9,8 @@ export default function MenuList({
   fromNavbar = false,
   subMenuIdClicked = 1,
   noOfItems,
+  setMenuClicked,
+  comp,
 }) {
   const [showMenu, setShowMenu] = useState(false);
   const [menuIndexClicked, setMenuIndexClicked] = useState();
@@ -50,11 +52,16 @@ export default function MenuList({
           {menu?.subMenu?.length === 0 ? (
             <div className="menuListItem">
               <Link
-                to={`${menu?.path}`}
+                to={comp ? `/${comp}/${menu?.path}` : `${menu?.path}`}
                 key={menu?.id}
                 className="menuListItemLink"
               >
-                <div className="menuListItemLinkTxt">{menu?.title}</div>
+                <div
+                  className="menuListItemLinkTxt"
+                  onClick={() => setMenuClicked(false)}
+                >
+                  {menu?.title}
+                </div>
               </Link>
             </div>
           ) : (
@@ -62,12 +69,14 @@ export default function MenuList({
               <div className="menuListItem">
                 <span className="navLink2">
                   <Link
-                    to={`/courses/${menu?.path}`}
+                    to={`/${comp}/${menu?.path}`}
                     key={menu?.id}
                     className="menuListItemLinkTxt"
                     style={{ textDecoration: "none" }}
                   >
-                    {menu?.title}
+                    <div onClick={() => setMenuClicked(false)}>
+                      {menu?.title}
+                    </div>
                   </Link>
                 </span>
                 <span className={`navLinkdwn2`}>
@@ -82,6 +91,8 @@ export default function MenuList({
                     menuList={menu?.subMenu}
                     subMenuIdClicked={menu?.id}
                     noOfItems={menuList?.length}
+                    setMenuClicked={setMenuClicked}
+                    comp={comp}
                   />
                 )}
             </div>

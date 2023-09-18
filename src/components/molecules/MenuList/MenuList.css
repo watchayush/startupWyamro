@@ -51,7 +51,7 @@
   color: rgba(152, 151, 151, 0.974);
 }
 .menuListItemLinkTxt :hover {
-  color: rgb(255, 86, 86);
+  color: #00aed1;
 }
 .subMenuCard2 {
   position: absolute;

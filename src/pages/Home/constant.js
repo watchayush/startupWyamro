@@ -36,6 +36,7 @@ export const allCourses = [
     courses: [
       {
         value: "yoga_instructor",
+        courseType: "yogaInstructor",
         name: "Yoga Instructor",
         duration: "6 Months (270 hours)",
         eligibility: "10th",
@@ -43,6 +44,7 @@ export const allCourses = [
       },
       {
         value: "yoga_trainer",
+        courseType: "yogaTrainer",
         name: "Yoga Trainer",
         duration: "1 Year (420 hours)",
         eligibility: "10th",
@@ -50,6 +52,7 @@ export const allCourses = [
       },
       {
         value: "senior_yoga_trainer",
+        courseType: "seniorYogaTrainer",
         name: "Senior Yoga Trainer",
         duration: "1 Year (570 hours)",
         eligibility: "Graduate",
@@ -57,6 +60,7 @@ export const allCourses = [
       },
       {
         value: "yoga_therapy_assistant",
+        courseType: "yogaTherapyAssistant",
         name: "Yoga Therapy Assistant",
         duration: "6 Months (700 - 900 hours)",
         eligibility: "12th",
@@ -64,6 +68,7 @@ export const allCourses = [
       },
       {
         value: "assistant_yoga_instructor",
+        courseType: "assistantYogaInstructor",
         name: "Assistant Yoga Instructor",
         duration: "1 Year (203 hours)",
         eligibility: "8th",
@@ -71,6 +76,7 @@ export const allCourses = [
       },
       {
         value: "yoga_wellness_trainer",
+        courseType: "yogaWellnessTrainer",
         name: "Yoga Wellness Trainer",
         duration: "6 Months (405 hours)",
         eligibility: "12th",

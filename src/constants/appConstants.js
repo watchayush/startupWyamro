@@ -23,37 +23,37 @@ export const navItems = [
         subMenu: [
           {
             title: "Yoga Instructor",
-            path: "/courses?course=nsdc",
+            path: "yogaInstructor",
             id: 1,
             subMenu: [],
           },
           {
             title: "Yoga Trainer",
-            path: "/",
+            path: "yogaTrainer",
             id: 2,
             subMenu: [],
           },
           {
             title: "Senior Yoga Trainer",
-            path: "/",
+            path: "seniorYogaTrainer",
             id: 3,
             subMenu: [],
           },
           {
             title: "Yoga Therapy Assistant",
-            path: "/",
+            path: "yogaTherapyAssistant",
             id: 4,
             subMenu: [],
           },
           {
             title: "Assistant Yoga Instructor",
-            path: "/",
+            path: "assistantYogaInstructor",
             id: 5,
             subMenu: [],
           },
           {
             title: "Yoga Wellness Trainer",
-            path: "/",
+            path: "yogaWellnessTrainer",
             id: 6,
             subMenu: [],
           },
@@ -66,37 +66,37 @@ export const navItems = [
         subMenu: [
           {
             title: "Protocol Instructor",
-            path: "/",
+            path: "protocolInstructor",
             id: 1,
             subMenu: [],
           },
           {
             title: "Wellness Instructor",
-            path: "/",
+            path: "wellnessInstructor",
             id: 2,
             subMenu: [],
           },
           {
             title: "Teacher & Evaluator",
-            path: "/",
+            path: "teacherEvaluator",
             id: 3,
             subMenu: [],
           },
           {
             title: "Master",
-            path: "/",
+            path: "master",
             id: 4,
             subMenu: [],
           },
           {
             title: "Assistant Yoga Therapist",
-            path: "/",
+            path: "assistantYogaTherapist",
             id: 5,
             subMenu: [],
           },
           {
             title: "Yoga Therapist",
-            path: "/",
+            path: "yogaTherapist",
             id: 6,
             subMenu: [],
           },
@@ -109,19 +109,19 @@ export const navItems = [
         subMenu: [
           {
             title: "Certificate course in Yoga",
-            path: "/",
+            path: "certificateCourseInYoga",
             id: 1,
             subMenu: [],
           },
           {
             title: "Diploma in Yoga Education.",
-            path: "/",
+            path: "diplomaInYoga",
             id: 2,
             subMenu: [],
           },
           {
             title: "P.g Diploma in Yoga Education. ",
-            path: "/",
+            path: "pgDiplomaInYoga",
             id: 3,
             subMenu: [],
           },
@@ -134,13 +134,13 @@ export const navItems = [
         subMenu: [
           {
             title: "B.A IN YOGA",
-            path: "/",
+            path: "baInYoga",
             id: 1,
             subMenu: [],
           },
           {
             title: "M.A IN YOGA",
-            path: "/",
+            path: "maInYoga",
             id: 2,
             subMenu: [],
           },

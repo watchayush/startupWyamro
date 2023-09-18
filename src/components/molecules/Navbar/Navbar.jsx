@@ -87,7 +87,9 @@ const Navbar = () => {
                           key={menu?.id}
                           className={bgColor ? "navLink nvLink" : "navLink"}
                         >
-                          <div>{menu?.title}</div>
+                          <div onClick={() => setMenuClicked(false)}>
+                            {menu?.title}
+                          </div>
                         </Link>
                       </span>
                     </div>
@@ -113,7 +115,12 @@ const Navbar = () => {
                   {menu?.subMenu?.length > 0 &&
                     showMenu &&
                     index === menuIndexClicked && (
-                      <MenuList menuList={menu?.subMenu} fromNavbar={true} />
+                      <MenuList
+                        menuList={menu?.subMenu}
+                        fromNavbar={true}
+                        setMenuClicked={setMenuClicked}
+                        comp={menu?.title?.toLowerCase()}
+                      />
                     )}
                   {/* </> */}
                   {/* )} */}
