@@ -9,7 +9,7 @@ export default function Admission() {
       style={{
         backgroundImage: "url('/images/home/admission.png')",
         height: "100vh",
-        marginTop: "4em",
+        marginTop: "0em",
       }}
       data-scroll-index="7"
     >
