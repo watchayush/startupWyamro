@@ -245,7 +245,7 @@ h1 {
 }
 @media (max-width: 870px) {
   .descSection {
-    margin: 0em 0 1em 0;
+    margin: 1em 0 1em 0;
     font-size: 0.9375em;
   }
   .foundationDescLeft {
