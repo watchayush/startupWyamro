@@ -205,11 +205,11 @@
 
 @media (max-width: 870px) {
   .caroselStyle {
-    height: 50vh;
+    height: 45vh;
     /* margin-top: 2em; */
   }
   .caroselStyle .slider {
-    height: 50vh !important;
+    height: 45vh !important;
   }
 }
 
