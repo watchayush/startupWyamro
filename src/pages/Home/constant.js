@@ -1,9 +1,9 @@
 export const caroselImages = [
   {
-    url: "/images/home/yogaImg2.jpg",
+    url: "/images/home/yogaImage3.jpg",
   },
   {
-    url: "/images/home/yogaImage3.jpg",
+    url: "/images/home/yogaImg2.jpg",
   },
 ];
 
