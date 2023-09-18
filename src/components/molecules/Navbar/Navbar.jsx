@@ -119,7 +119,11 @@ const Navbar = () => {
                         menuList={menu?.subMenu}
                         fromNavbar={true}
                         setMenuClicked={setMenuClicked}
-                        comp={menu?.title?.toLowerCase()}
+                        comp={
+                          menu?.title?.toLowerCase() === "courses"
+                            ? "courses"
+                            : null
+                        }
                       />
                     )}
                   {/* </> */}
