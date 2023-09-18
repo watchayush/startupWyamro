@@ -1,3 +1,33 @@
 .carImgCont {
   height: 100% !important;
 }
+.carouselBannerContainer {
+  text-align: end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.carouselBanner {
+  height: 100%;
+  font-family: Papyrus, fantasy;
+  text-align: end;
+  width: 60%;
+  padding: 16% 5em;
+  font-size: 2em;
+  font-weight: 1000;
+  color: #fff;
+  /* background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+@media (max-width: 870px) {
+  .carouselBanner {
+    height: 100%;
+    font-family: Papyrus, fantasy;
+    text-align: end;
+    padding: 31% 1em;
+    font-size: 1.2em;
+    font-weight: 1000;
+    color: #fff;
+  }
+}
