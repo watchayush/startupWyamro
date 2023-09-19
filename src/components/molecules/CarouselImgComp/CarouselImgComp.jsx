@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 import "./CarouselImgComp.css";
 import { motion } from "framer-motion";
 
-export default function CarouselImgComp({ carouselDetails }) {
+export default function CarouselImgComp({ carouselDetails, focusToCourses }) {
   const imgUrl = process.env.PUBLIC_URL + carouselDetails.url;
 
   //   ${(props) => props.imgUrl && `background-image: (${props.imgUrl})`}
@@ -27,8 +27,18 @@ export default function CarouselImgComp({ carouselDetails }) {
           animate="slide"
           className="carouselBannerContainer"
         >
-          <div className="carouselBanner">
-            World Yoga and Alternative Medication Research Organisation
+          <div className="carouselBannerRight">
+            <div className="carouselBanner">
+              World Yoga and Alternative Medication Research Organisation
+            </div>
+            <button
+              className="coursesBtn"
+              onClick={() => {
+                focusToCourses();
+              }}
+            >
+              View Courses
+            </button>
           </div>
         </motion.div>
       </CarCont>

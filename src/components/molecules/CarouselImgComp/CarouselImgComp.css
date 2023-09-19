@@ -4,15 +4,18 @@
 .carouselBannerContainer {
   text-align: end;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 .carouselBanner {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   font-family: Papyrus, fantasy;
   text-align: end;
-  width: 60%;
-  padding: 16% 5em;
+
+  padding: 25% 0 0 5em;
   font-size: 2em;
   font-weight: 1000;
   color: #fff;
@@ -20,14 +23,74 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
 }
+.carouselBannerRight {
+  width: 60%;
+  padding-right: 5em;
+}
+.coursesBtn {
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  padding: 17px 30px;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  background: #00bfff;
+  margin-top: 2.5em;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 2em;
+  text-transform: uppercase;
+  position: relative;
+  animation: mymove 3s infinite;
+}
+@keyframes mymove {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.coursesBtn:hover {
+  color: #fff;
+  background: transparent;
+  border: 0.2em solid #00bfffdc;
+}
 @media (max-width: 870px) {
+  .carouselBannerRight {
+    padding-right: 1em;
+  }
   .carouselBanner {
     height: 100%;
     font-family: Papyrus, fantasy;
     text-align: end;
-    padding: 31% 1em;
+    padding: 51% 0 0 1em;
     font-size: 1.2em;
     font-weight: 1000;
     color: #fff;
+  }
+  .coursesBtn {
+    margin-top: 1.5em;
+    padding: 5px 10px;
+    font-size: 10px;
+    animation: mymove 3s infinite;
+  }
+  @keyframes mymove {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 10px;
+    }
+    100% {
+      top: 0px;
+    }
   }
 }

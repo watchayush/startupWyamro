@@ -14,12 +14,18 @@ import MultiCardCarousel from "../../components/organisms/Gallery/MultiCardCarou
 import CarouselImgComp from "../../components/molecules/CarouselImgComp/CarouselImgComp";
 
 export default function Home() {
+  const focusToCourses = () => {
+    document.getElementById("courseOffered").scrollIntoView();
+  };
   return (
     <div className="homeContainer">
       <Carousel showThumbs={false} className="caroselStyle">
         {caroselImages?.map((car) => (
           <div className="carCont">
-            <CarouselImgComp carouselDetails={car} />
+            <CarouselImgComp
+              carouselDetails={car}
+              focusToCourses={focusToCourses}
+            />
             {/* <img src={process.env.PUBLIC_URL + car.url} /> */}
           </div>
         ))}
@@ -51,7 +57,7 @@ export default function Home() {
             );
           })}
       </div>
-      <div className="coursesOfferedContainer">
+      <div className="coursesOfferedContainer" id="courseOffered">
         <div className="coursesOfferedHeading">Courses offered</div>
         <MultiCardCarousel allCourses={allCourses} />
       </div>

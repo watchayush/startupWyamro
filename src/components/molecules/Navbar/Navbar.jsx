@@ -87,7 +87,12 @@ const Navbar = () => {
                           key={menu?.id}
                           className={bgColor ? "navLink nvLink" : "navLink"}
                         >
-                          <div onClick={() => setMenuClicked(false)}>
+                          <div
+                            onClick={() => {
+                              setShowMenu(false);
+                              setMenuClicked(false);
+                            }}
+                          >
                             {menu?.title}
                           </div>
                         </Link>
