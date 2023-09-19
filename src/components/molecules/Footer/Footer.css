@@ -159,3 +159,32 @@ ul {
   font-size: 14px;
   color: #878787;
 }
+@media (max-width: 870px) {
+  .footer-section {
+    background: #304146 !important;
+  }
+  .cta-text h4 {
+    color: #fff;
+  }
+  .footer-widget-heading h3 {
+    color: #fff;
+  }
+  .cta-text span {
+    color: #c9c4c4;
+  }
+  .footer-widget-heading span {
+    color: #c9c4c4;
+  }
+  .footer-social-icon {
+    margin-bottom: 1em;
+  }
+  .footer-social-icon span {
+    color: #fff;
+  }
+  .footer-text p {
+    color: #c9c4c4;
+  }
+  .footer-widget ul li a {
+    color: #dcd6d6;
+  }
+}
