@@ -38,10 +38,10 @@ export default function ContactDetails() {
           <div className="info-right">
             {offices?.map((office) => {
               return (
-                <h4 className="officeDetails">
+                <div className="officeDetails">
                   <span className="officeName">{office?.name}</span>
                   <span className="officeAddress">{office?.address}</span>
-                </h4>
+                </div>
               );
             })}
           </div>
