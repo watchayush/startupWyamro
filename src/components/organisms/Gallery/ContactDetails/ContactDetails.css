@@ -73,6 +73,12 @@ ul.contact-info li {
     width: 100%;
   }
 }
+@media only screen and (max-width: 600px) {
+  .officeName,
+  .officeAddress {
+    font-size: 12px;
+  }
+}
 .officeName {
   width: 30%;
 }
