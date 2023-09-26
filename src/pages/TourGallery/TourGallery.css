@@ -1,9 +1,9 @@
 .tourGalleryContainer {
   /* background: rgb(245, 245, 245); */
-  background: #add8e6;
+  background: #24404a;
   /* background: -webkit-linear-gradient(to right, #00416a, #e4e5e6); */
   /* background: linear-gradient(to right, #00416a, #e4e5e6); */
-  padding-top: 8em;
+  padding-block: 8em;
 }
 .tourGalleryVidContainer {
   margin-inline: auto;
