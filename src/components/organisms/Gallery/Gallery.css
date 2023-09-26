@@ -11,16 +11,30 @@
 .galleryHeadingContainer {
   display: flex;
   justify-content: center;
+  color: #fff;
 }
 .galleryHeading {
-  margin-top: 5em !important;
-  margin-bottom: 2em !important;
+  margin-top: 3em !important;
+  margin-bottom: 3em !important;
   font-weight: bold !important;
-  font-size: 18px;
-  font-family: "Trebuchet MS", Verdana, sans-serif !important;
+  font-size: 20px !important;
+  /* font-family: "Trebuchet MS", Verdana, sans-serif !important; */
   width: 80%;
   margin-inline: auto;
   text-align: left;
+
+  letter-spacing: 1.5px !important;
+  font-family: Karla, sans-serif !important;
+  position: relative;
+}
+.galleryHeading::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: white;
+  bottom: -0.5em;
+  left: 0;
+  width: 8%;
 }
 
 .galleryWrap .single {
