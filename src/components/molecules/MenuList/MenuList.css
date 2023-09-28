@@ -107,6 +107,7 @@
 @media (max-width: 1160px) {
   .subMenuCard {
     position: static;
+    min-width: 336px;
     /* box-shadow: 5px 0px 5px #0fa3b1 inset; */
     /* transition: 2s ease; */
     /* background: white; */
@@ -134,7 +135,7 @@
   }
   .menuListItem {
     height: 4em;
-    padding: 1em;
+    /* padding: 1em; */
     border-bottom: 1px solid hsla(0, 0%, 100%, 0.25);
   }
   .menuListItem:first-child {

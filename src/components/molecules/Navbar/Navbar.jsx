@@ -16,6 +16,7 @@ const Navbar = () => {
   const [bgColor, setBgColor] = useState(false);
 
   const appendClass = menuClicked ? " mobileNavItems" : "";
+  const navClick = menuClicked ? "navOpened" : "";
 
   const loc = useLocation();
   console.log("loc ==> ", loc);
@@ -47,7 +48,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={bgColor ? "navBackground" : ""}>
+      <nav className={`${bgColor ? "navBackground" : ""} ${navClick}`}>
         {/* website logo */}
         <Link to="/" className="brand">
           {/* <Logo /> */}
