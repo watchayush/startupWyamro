@@ -29,7 +29,7 @@ export default function CarouselImgComp({ carouselDetails, focusToCourses }) {
         >
           <div className="carouselBannerRight">
             <div className="carouselBanner">
-              World Yoga and Alternative Medication Research Organisation
+              World Yoga and Alternative Medicine Research Organisation
             </div>
             <button
               className="coursesBtn"
