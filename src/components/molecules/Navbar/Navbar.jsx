@@ -113,7 +113,7 @@ const Navbar = () => {
                       </span>
 
                       <span className={bgColor ? "navLink nvLink" : "navLink"}>
-                        <ExpandMoreIcon />
+                        <ExpandMoreIcon className="dropdownIcon" />
                       </span>
                     </div>
                   )}

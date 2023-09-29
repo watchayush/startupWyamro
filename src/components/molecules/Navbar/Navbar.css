@@ -134,7 +134,7 @@ nav {
 }
 .closeBtn {
   color: #fff;
-  background-color: #577684;
+  background-color: #328fd4;
 }
 .subMenuCard {
   /* position: absolute;
@@ -228,6 +228,12 @@ nav {
   .navLink {
     letter-spacing: 3px;
     color: #fff;
+  }
+  .dropdownIcon {
+    color: #577684;
+  }
+  .dropdownIcon:hover {
+    color: white;
   }
   .navLinkContainer {
     display: block;
