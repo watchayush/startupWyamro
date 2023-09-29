@@ -133,7 +133,8 @@ nav {
   cursor: pointer;
 }
 .closeBtn {
-  color: rgb(3 96 251 / 89%);
+  color: #fff;
+  background-color: #328fd4;
 }
 .subMenuCard {
   /* position: absolute;
@@ -184,7 +185,7 @@ nav {
   }
   .menuBtn {
     position: absolute;
-    top: 2em;
+    top: 1.5em;
     right: 2em;
     display: inline-block;
     transition: 0.3s ease-out;
