@@ -225,6 +225,7 @@ nav {
     );  */
   }
   .navLink {
+    letter-spacing: 3px;
     color: #fff;
   }
   .navLinkContainer {
