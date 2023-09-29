@@ -251,6 +251,7 @@ nav {
     color: #fff;
     cursor: pointer;
     line-height: 4em;
+    border-bottom: 1px solid;
   }
 
   .mobileNavItems li:before {
