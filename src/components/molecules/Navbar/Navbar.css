@@ -270,7 +270,7 @@ nav {
     background-color: #fff;
     left: 0;
     width: 100%;
-    animation: slideMenuFromLe 0.4s ease-out;
+    animation: slideMenuFromLe 0.8s ease-out;
   }
 
   .mobileNavItems li::before {
