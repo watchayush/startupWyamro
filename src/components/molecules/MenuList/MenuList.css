@@ -133,6 +133,7 @@
   .listItemContainer {
     background: #164364;
     padding-left: 8px;
+    border-bottom: 1px solid #163247;
   }
   .navLink2 {
     color: white;
