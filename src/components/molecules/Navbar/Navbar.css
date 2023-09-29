@@ -262,7 +262,7 @@ nav {
       width: 0%;
     }
     100% {
-      width: 40px;
+      width: 100%;
     }
   }
   .mobileNavItems li::after {
@@ -272,7 +272,7 @@ nav {
     bottom: 0;
     background-color: #fff;
     left: 0;
-    width: 40px;
+    width: 100%;
     animation: slideMenuFromLe 0.8s ease-out;
   }
 
