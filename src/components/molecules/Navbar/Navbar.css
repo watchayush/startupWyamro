@@ -197,6 +197,7 @@ nav {
     display: none;
   }
   .mobileNavItems {
+    margin-top: 4em;
     padding: 5em 5em 5em 3em;
 
     /* overflow-y: scroll; */
