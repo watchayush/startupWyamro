@@ -158,3 +158,8 @@
     margin-right: 5px;
   }
 }
+@media (max-width: 600px) {
+  .tourContainer {
+    padding: 5% 5% 0% 5%;
+  }
+}
