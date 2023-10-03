@@ -8,7 +8,7 @@
 .section-bg::before {
   background-image: linear-gradient(
     to right,
-    rgba(90, 100, 232, 0.9),
+    rgba(84, 96, 234, 0.9),
     #1bb7ea /* rgba(84, 96, 234, 0.9) */
   );
   opacity: 0.8;
