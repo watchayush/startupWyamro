@@ -82,6 +82,7 @@
 }
 .content {
   color: #fff;
+  font-weight: bold !important;
 }
 .moveToGallery {
   display: flex;
@@ -162,6 +163,6 @@
 }
 @media (max-width: 600px) {
   .tourContainer {
-    padding: 5% 5% 0% 5%;
+    padding: 5% 2% 0% 2%;
   }
 }
