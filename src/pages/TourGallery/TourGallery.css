@@ -1,6 +1,6 @@
 .tourGalleryContainer {
-  /* background: rgb(245, 245, 245); */
-  background: #24404a;
+  /* background: #24404a; */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
   /* background: -webkit-linear-gradient(to right, #00416a, #e4e5e6); */
   /* background: linear-gradient(to right, #00416a, #e4e5e6); */
   padding-block: 8em;
