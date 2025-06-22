@@ -2,8 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { imageSliderConst } from "./Constant";
 import "./ImageSlider.css";
-import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
-import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 
 const ImageSlider = () => {
   const [positionIndexes, setPositionIndexes] = useState(
@@ -19,19 +18,19 @@ const ImageSlider = () => {
     });
   };
 
-//   const handleBack = () => {
-//     setPositionIndexes((prevIndexes) => {
-//       const updatedIndexes = prevIndexes.map(
-//         (prevIndex) => (prevIndex + 2) % 3
-//       );
+  //   const handleBack = () => {
+  //     setPositionIndexes((prevIndexes) => {
+  //       const updatedIndexes = prevIndexes.map(
+  //         (prevIndex) => (prevIndex + 2) % 3
+  //       );
 
-//       return updatedIndexes;
-//     });
-//   };
+  //       return updatedIndexes;
+  //     });
+  //   };
 
   const images = imageSliderConst.map((item) => item.url);
 
-  const positions = ["center",  "right", "right1"];
+  const positions = ["center", "right", "right1"];
 
   const imageVariants = {
     center: { x: "0%", scale: 1, zIndex: 5 },
@@ -42,31 +41,28 @@ const ImageSlider = () => {
   };
   return (
     <>
-        <div className="imgSlider">
-      {images.map((image, index) => (
-        <motion.img
-          key={index}
-          src={image}
-          alt={image}
-          className="sliderImg"
-        //   className="rounded-[12px]"
-          initial="center"
-          animate={positions[positionIndexes[index]]}
-          variants={imageVariants}
-          transition={{ duration: 0.5 }}
-          style={{ position: "absolute" }}
-        />
-      ))}
+      <div className="imgSlider">
+        {images.map((image, index) => (
+          <motion.img
+            key={index}
+            src={image}
+            alt={image}
+            className="sliderImg"
+            //   className="rounded-[12px]"
+            initial="center"
+            animate={positions[positionIndexes[index]]}
+            variants={imageVariants}
+            transition={{ duration: 0.5 }}
+            style={{ position: "absolute" }}
+          />
+        ))}
       </div>
       <div className="prevNxtBtnContainer">
         {/* <ArrowBackRoundedIcon
           className="prevNxtBtn"
           onClick={handleBack}
         /> */}
-        <ArrowForwardRoundedIcon
-          className="prevNxtBtn"
-          onClick={handleNext}
-        />
+        <ArrowForwardRoundedIcon className="prevNxtBtn" onClick={handleNext} />
       </div>
     </>
   );
