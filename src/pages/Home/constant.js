@@ -213,13 +213,6 @@ export const coreMembers = {
       profession: "Accupressure specialist",
     },
     {
-      name: "Surya Kant Arya",
-      url: "/images/home/surya_Kant.jpeg",
-      designation: "Executive Member",
-      zone: "(WYAMRO East Zone)",
-      profession: "Panchkarma specialist",
-    },
-    {
       name: "Nishi Kumari",
       url: "/images/home/nishi_Kumari.jpeg",
       designation: "Executive Member",
