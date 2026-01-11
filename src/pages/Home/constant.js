@@ -226,13 +226,6 @@ export const coreMembers = {
       zone: "(WYAMRO East Zone)",
       profession: "Treasurer",
     },
-    {
-      name: "Rajiv Kumar",
-      url: "/images/home/rajiv.jpeg",
-      designation: "Executive Member",
-      zone: "(WYAMRO East Zone)",
-      profession: "Software Developer",
-    },
   ],
   core_members: [
     {
@@ -285,3 +278,50 @@ export const coreMembers = {
     },
   ],
 };
+
+export const members = [
+  {
+    name: "Suraj Anand",
+    url: "/images/members/Suraj.jpeg",
+  },
+  {
+    name: "Sushant Kumar",
+    url: "/images/members/Sushant.jpeg",
+  },
+  {
+    name: "Rahul Kumar",
+    url: "/images/members/Rahul.jpeg",
+  },
+  {
+    name: "Sunny Sharma",
+    url: "/images/members/Sunny.jpeg",
+  },
+  {
+    name: "Nalin Kumar Singh",
+    url: "/images/members/Nalin.jpeg",
+  },
+  {
+    name: "Prity Podar",
+    url: "/images/members/Prity.jpeg",
+  },
+  {
+    name: "Dr. Prity Kumari",
+    url: "/images/members/PrityKumari.jpeg",
+  },
+  {
+    name: "Dr. Pooja Kumari",
+    url: "/images/members/PoojaKumari.jpeg",
+  },
+  {
+    name: "Dr. Sangeeta Kumari",
+    url: "/images/members/SangeetaKumari.jpeg",
+  },
+  {
+    name: "Lavely mehra",
+    url: "/images/members/LavelyMehra.jpeg",
+  },
+  {
+    name: "Dr. Kajal Kumari",
+    url: "/images/members/KajalKumari.jpeg",
+  },
+];

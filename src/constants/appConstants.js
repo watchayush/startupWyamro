@@ -216,4 +216,10 @@ export const navItems = [
       },
     ],
   },
+  {
+    title: "Foundation Members",
+    path: "/members",
+    id: 9,
+    subMenu: [],
+  },
 ];

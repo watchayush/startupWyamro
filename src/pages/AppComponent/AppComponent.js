@@ -10,6 +10,7 @@ import Footer from "../../components/molecules/Footer/Footer";
 import ContactUs from "../ContactUs/ContactUs";
 import AboutUs from "../AboutUs/AboutUs";
 import Admission from "../Admission/Admission";
+import Members from "../Members/Members";
 
 export default function AppComponent() {
   return (
@@ -27,6 +28,7 @@ export default function AppComponent() {
           <Route path="/admissionForm" element={<Admission />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/members" element={<Members />} />
         </Routes>
         <Footer />
       </BrowserRouter>
