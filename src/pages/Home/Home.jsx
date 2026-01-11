@@ -12,6 +12,7 @@ import "./Home.css";
 import { Typography } from "@mui/material";
 import MultiCardCarousel from "../../components/organisms/Gallery/MultiCardCarousel/MultiCardCarousel";
 import CarouselImgComp from "../../components/molecules/CarouselImgComp/CarouselImgComp";
+import ImageSlider from "../../components/molecules/ImageSlider/ImageSlider";
 
 export default function Home() {
   const focusToCourses = () => {
@@ -37,6 +38,24 @@ export default function Home() {
           <div className="descPara">{wyamroDescription}</div>
         </div>
         <div className="foundationDescRight"></div>
+      </div>
+
+      <div className="imageSliderContainer">
+        <div className="imageSliderTextContainer">
+          <div className="imageTxt">
+            At Dayanand Public School, on the auspicious eve of hanuman Jayanti
+            a Health and awareness program was organized, in which Dr. Rajkumar
+            Singh, Dr. Arvind,Respected Ramlakhan Singh, Sanjeev Kumar, Kumar
+            Pandey, Ajay Saheb, from Nalanda district, Bhagalpur, and a large
+            number of students, parents, and present faculty members
+            participated. A heartfelt thank you to all the dignitaries for
+            making the program a success. Thank you to all the guests. Jai Hind.\n
+            Dr. Rajkumar Singh Principal Dayanand Public School, Patna
+          </div>
+        </div>
+        <div className="imSlidr">
+          <ImageSlider />
+        </div>
       </div>
 
       <div className="facilitiesWrap">
