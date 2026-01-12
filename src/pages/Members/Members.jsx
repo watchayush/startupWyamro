@@ -1,6 +1,5 @@
 import React from "react";
 import "./Members.css";
-import { Typography } from "@mui/material";
 // import Member from "../../components/molecules/Member/Member";
 import { members } from "../Home/constant";
 import SingleMember from "../../components/molecules/SingleMember/SingleMember";
